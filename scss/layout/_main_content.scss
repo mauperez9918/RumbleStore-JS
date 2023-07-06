@@ -1,0 +1,28 @@
+main {
+    display: flex;
+    justify-content: center;
+
+    .contenido-principal {
+        width: 80%;
+        height: 100%;
+        background-color: white;
+        padding-bottom: 20px;
+        min-height: 80vh;
+    }
+}
+
+@include mobile {
+    main {
+        .contenido-principal {
+            width: 100%;
+        }
+    }
+}
+
+@include tablet {
+    main {
+        .contenido-principal {
+            width: 100%;
+        }
+    }
+}

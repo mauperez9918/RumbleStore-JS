@@ -14,7 +14,7 @@
       content="computadoras, tarjeta de video, monitores, equipos, discos duros, motherboards, informatica, gabinetes, procesadores, playstation, xbox, discos solidos"
     />
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
     <!-- LINK BOOTSTRAP -->
     <link
       rel="stylesheet"
@@ -26,8 +26,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
     <!-- LINK CSS -->
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Inicio - Rumble Store</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Carrito - Rumble Store</title>
     <!-- FUENTES TEXTO -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,8 +42,11 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <!-- LOGO NAV -->
-          <a href="#"
-            ><img class="logo" src="images/rumble-logo.png" alt="Rumble Store"
+          <a href="../index.html"
+            ><img
+              class="logo"
+              src="../images/rumble-logo.png"
+              alt="Rumble Store"
           /></a>
           <button
             class="navbar-toggler"
@@ -63,23 +66,23 @@
             <!-- LISTAS NAV -->
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link" aria-current="page" href="../index.html"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/cambios-y-garantias.html"
+                <a class="nav-link" href="cambios-y-garantias.html"
                   >Cambios y Garantías</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/carrito.html"
+                <a class="nav-link active" href="carrito.html"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
@@ -100,113 +103,56 @@
     </header>
     <main>
       <div class="contenido-principal">
-        <!-- CARRUSEL -->
-        <div id="carouselExampleIndicators" class="carousel slide">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="images/index/banner1.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="images/index/banner2.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="images/index/banner3.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        <div class="titulo-carrito">
+          <h1>Tu compra</h1>
         </div>
-        <div class="container-fluid">
-          <!-- ROW -->
-          <div class="row justify-content-center align-items-start">
-            <!-- SECCION CATEGORIAS -->
-            <section class="categorias col-lg-2">
-              <h2>Categorías</h2>
-              <ul>
-                <li><a href="#">Equipos armados</a></li>
-                <li><a href="#">Laptops</a></li>
-                <li><a href="#">Consolas</a></li>
-                <li><a href="#">Perifericos</a></li>
-                <li><a href="#">Monitores</a></li>
-                <li><a href="#">Procesadores</a></li>
-                <li><a href="#">Motherboards</a></li>
-                <li><a href="#">Memorias Ram</a></li>
-                <li><a href="#">Refrigeracion</a></li>
-                <li><a href="#">Tarjetas de Video</a></li>
-                <li><a href="#">Almacenamiento</a></li>
-                <li><a href="#">Fuentes</a></li>
-                <li><a href="#">Gabinetes</a></li>
-              </ul>
-            </section>
-            <!-- SECCION NOVEDADES -->
-            <section id="novedades" class="novedades col-lg-10">
-              <h1>Novedades</h1>
-            </section>
+        <!-- COMPRA Y PRODUCTOS-->
+        <section class="compra">
+          <div id="productosCarrito" class="productos col-lg-8">
+            <!-- <article class="producto-carrito">
+                        <img src="../images/index/asus-z690.jpg" alt="Asus ROG Maximus Z690">
+                        <h3>Mother Asus ROG Maximus Z690 Formula LGA1700</h3>
+                        <p>US$ 1,290.00</p>
+                    </article>
+                    <article class="producto-carrito">
+                        <img src="../images/index/ryzen9-7950x.jpg" alt="Ryzen 9 7950x">
+                        <h3>AMD Ryzen 9 7950X AM5</h3>
+                        <p>US$ 1,000.00</p>
+                    </article> -->
           </div>
-        </div>
+          <!-- RESUMEN DE LA COMPRA -->
+          <div class="resumen-compra col-lg-3">
+            <div>
+              <h2 class="text-center">Resumen de compra</h2>
+              <div class="total">
+                <div class="p-total">
+                  <p>Coste de envío</p>
+                  <p>Subtotal</p>
+                  <p>Total</p>
+                </div>
+                <div class="p-precios">
+                  <p>US$ 15</p>
+                  <p>US$ <span id="subtotal"></span></p>
+                  <p>US$ <span id="total"></span></p>
+                </div>
+              </div>
+            </div>
+            <button class="btndefault">Realizar</button>
+          </div>
+        </section>
       </div>
     </main>
     <footer>
       <div class="footer">
         <div class="info-footer">
-          <p>Dirección: San Martín 982</p>
+          <p>Direccion: San Martín 982</p>
           <p>Telefono: 0387 431-7750</p>
           <p>Lunes a Viernes de 9:00 a 18:00 hs</p>
         </div>
         <!-- LOGO FOOTER -->
-        <img class="logo-footer" src="images/logo.png" alt="Logo" />
+        <img class="logo-footer" src="../images/logo.png" alt="Logo" />
         <div class="redes">
-          <!-- REDES ICONOS -->
+          <!-- ICONOS REDES -->
           <a href="https://www.instagram.com/"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -257,6 +203,6 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <script src="js/index.js"></script>
+    <script src="../js/carrito.js"></script>
   </body>
 </html>

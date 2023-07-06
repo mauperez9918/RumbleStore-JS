@@ -1,0 +1,26 @@
+.cambios-banner {
+    width: 100%;
+    height: auto;
+}
+
+.cambios-y-garantias {
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
+
+@include mobile {
+
+    .cambios-y-garantias {
+        text-align: left;
+
+        p {
+            margin: 0px 12px;
+        }
+    }
+}

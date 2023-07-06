@@ -1,0 +1,128 @@
+nav {
+    width: 80%;
+
+    .navbar-toggler {
+        background-color: white;
+    }
+
+    .navbar-nav {
+        font-size: 18px;
+
+        .nav-item {
+            margin: 10px;
+            color: white;
+
+            &:hover {
+                background-color: orange;
+                border-radius: 8px;
+                color: black;
+            }
+
+            .nav-link {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                border-radius: 8px;
+            }
+
+            .nav-link.active {
+                color: orange;
+
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+// Pagina contactos (css nativo sin bootstrap) //
+
+.barra-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0px;
+
+    ul {
+        display: flex;
+        align-items: center;
+
+        li {
+            margin: 0px 11px;
+
+            a {
+                display: block;
+                padding: 10px 5px;
+                color: white;
+                font-size: 18px;
+                text-decoration: none;
+                border-radius: 8px;
+                text-align: center;
+
+                .cart-icon {
+                    width: 50px;
+                }
+
+                &:hover {
+                    background-color: orange;
+                    border-radius: 8px;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+
+            .lista-active {
+                color: orange;
+
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+
+// Media Queries //
+
+@include mobile {
+    header {
+        nav {
+            width: 100%;
+
+            .logo {
+                width: 280px;
+            }
+
+            .barra-nav {
+
+                flex-direction: column;
+
+                ul {
+                    margin-top: 10px;
+                    flex-direction: column;
+
+                    li {
+                        width: 100;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include tablet {
+    header {
+        nav {
+            width: 100%;
+
+            .logo {
+                width: 280px;
+            }
+
+            .barra-nav {
+                flex-direction: column;
+            }
+        }
+    }
+}

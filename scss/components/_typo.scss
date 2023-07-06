@@ -1,0 +1,36 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    height: 72px;
+    font-weight: 500;
+}
+
+h2 {
+    height: 77px;
+}
+
+h3 {
+    margin-top: 10px;
+    height: 54px;
+}
+
+h4 {
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+// Media Queries //
+
+@media mobile {
+    h1 {
+        height: 73px;
+        margin-bottom: 15px;
+    }
+}

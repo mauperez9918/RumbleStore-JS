@@ -1,0 +1,35 @@
+.btndefault {
+  padding: 10px 30px;
+  border-radius: 6px;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+
+  &:hover {
+    background-color: orange;
+    color: black;
+  }
+}
+
+button,
+optgroup,
+select {
+  font-size: 16px;
+  padding: 3px 10px;
+  margin-left: 19px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: black;
+  background-color: orange;
+
+  &:hover {
+    background-color: black;
+    color: orange;
+  }
+}
+
+.positionBtnAgregar {
+  display: flex;
+}
