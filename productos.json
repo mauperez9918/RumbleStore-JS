@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "nombre": "Mother Asus ROG Maximus Z690 Formula LGA1700",
+    "precio": 1290,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/asus-z690_qrblrw.jpg",
+    "categoria": "Motherboards"
+  },
+  {
+    "id": 2,
+    "nombre": "AMD Ryzen 9 7950X AM5",
+    "precio": 1000,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/ryzen9-7950x_ubg1dp.jpg",
+    "categoria": "Procesadores"
+  },
+  {
+    "id": 3,
+    "nombre": "CPU Intel Core i9 13900K Raptor Lake 1700",
+    "precio": 929,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/i9-13900k_l6agxq.jpg",
+    "categoria": "Procesadores"
+  },
+  {
+    "id": 4,
+    "nombre": "GPU Zotac GeForce RTX 4090 Trinity 24Gb",
+    "precio": 2700,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/zotac-geforce-4090_veu7t4.jpg",
+    "categoria": "Tarjetas de Video"
+  },
+  {
+    "id": 5,
+    "nombre": "AORUS SSD PCIe Gen4 7000s 1TB",
+    "precio": 360,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/aorus-ssd-1tb_uga4ko.jpg",
+    "categoria": "Almacenamiento"
+  },
+  {
+    "id": 6,
+    "nombre": "Memoria Adata XPG Lancer RGB 16Gb DDR5 6000Mhz White",
+    "precio": 164,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/adata-xpg-ddr5_bkks7y.jpg",
+    "categoria": "Memorias Ram"
+  },
+  {
+    "id": 7,
+    "nombre": "Monitor ASUS TUF VG27VH1B Curvo 165hz",
+    "precio": 399,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/astuf-monitor_sqhrmp.jpg",
+    "categoria": "Monitores"
+  },
+  {
+    "id": 8,
+    "nombre": "Notebook AERO i9-13900H / 32GB DDR5 / 1TB / 16″ 4K OLED",
+    "precio": 3740,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/aero16-laptop_wrimdh.webp",
+    "categoria": "Notebooks"
+  },
+  {
+    "id": 9,
+    "nombre": "Teclado HyperX Alloy Origins 60% Aqua Tactile",
+    "precio": 110,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/hyperx-alloy-origins_prbp7n.jpg",
+    "categoria": "Perifericos"
+  },
+  {
+    "id": 10,
+    "nombre": "Fuente ASUS ROG STRIX 850G Gold",
+    "precio": 250,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/fuente-asus-850watts_cfgk0d.png",
+    "categoria": "Fuentes"
+  },
+  {
+    "id": 11,
+    "nombre": "Hikvision 18.5″ DS-D5019QE-B HDMI",
+    "precio": 108,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160745/Rumble%20Store/DS-D5022FN-C_Frente49918_e9319939191e497f849c3c249c01a4ed-1_1_csfyiy.jpg",
+    "categoria": "Monitores"
+  },
+  {
+    "id": 12,
+    "nombre": "Notebook ASUS ROG STRIX G16 G614JI-N3139W I9 13980HX",
+    "precio": 2920,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690161323/Rumble%20Store/notebook_1_hovpze.jpg",
+    "categoria": "Notebooks"
+  },
+  {
+    "id": 13,
+    "nombre": "Equipo Intel Core I3 10100f Pro Gamer 16Gb - SSD - GTX1650 4Gb",
+    "precio": 635,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690161662/Rumble%20Store/Equipo-INTEL_d6gbbn.jpg",
+    "categoria": "Equipos Armados"
+  },
+  {
+    "id": 14,
+    "nombre": "Equipo AMD Ryzen 3 3200G Pro Gamer - 8Gb - SSD - Radeon Graphics",
+    "precio": 369,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690161662/Rumble%20Store/Equipo-INTEL_d6gbbn.jpg",
+    "categoria": "Equipos Armados"
+  },
+  {
+    "id": 15,
+    "nombre": "Equipo AMD Ryzen 5 4500 Pro Gamer - SSD - 16Gb - GTX1660 Super",
+    "precio": 800,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690161808/Rumble%20Store/AMD-R-Ge-2-2_fbcwea.jpg",
+    "categoria": "Equipos Armados"
+  },
+  {
+    "id": 16,
+    "nombre": "Equipo Intel Core I5 10400f Pro Gamer 16gb - SSD - RTX3060 12Gbe",
+    "precio": 990,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690161965/Rumble%20Store/spirf_sqma63.jpg",
+    "categoria": "Equipos Armados"
+  },
+  {
+    "id": 17,
+    "nombre": "Microsoft Xbox Serie X - incluye control inalámbrico",
+    "precio": 950,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690162087/Rumble%20Store/4316_1_19e342b4f86446538d483a2a03055d96_u2g3qb.jpg",
+    "categoria": "Consolas"
+  },
+  {
+    "id": 18,
+    "nombre": "Sony PlayStation 5 Standard Edition",
+    "precio": 950,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690162267/Rumble%20Store/4221_1_39a9f16499f749d0b8cf2b7e71d697a0_utttbc.jpg",
+    "categoria": "Consolas"
+  },
+  {
+    "id": 19,
+    "nombre": "Nintendo Switch Lite Blue",
+    "precio": 345,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690162229/Rumble%20Store/consola-nintendo-switch-lite-azul-00152791_11521f5648264b6ea6ac2adf059b24b0_f78vjn.jpg",
+    "categoria": "Consolas"
+  },
+  {
+    "id": 20,
+    "nombre": "Mouse Logitech G502 Hero",
+    "precio": 44,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690162436/Rumble%20Store/G5022520HERO_115317_e3af3ee378d04c7e9158a22c0e6c21f8_1_bssvve.jpg",
+    "categoria": "Perifericos"
+  },
+  {
+    "id": 21,
+    "nombre": "Mouse pad Logitech G640",
+    "precio": 31,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690162613/Rumble%20Store/1631_2_892dbf8d644c4c96b0c3d43afc84faf7_1_u70jfx.jpg",
+    "categoria": "Perifericos"
+  },
+  {
+    "id": 22,
+    "nombre": "Razer Abyssus Lite + Goliathus Mobile",
+    "precio": 35,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690162708/Rumble%20Store/3066_2_9eb911076ff94f8fb6a7661579aa2dfa_ivvbal.jpg",
+    "categoria": "Perifericos"
+  },
+  {
+    "id": 23,
+    "nombre": "Auricular HyperX Cloud II Pink",
+    "precio": 119,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690162878/Rumble%20Store/HyperX2520Cloud2520II2520Pink_175883_868a4b0f19a848369417321310f3ea20_1_gnehdd.jpg",
+    "categoria": "Perifericos"
+  },
+  {
+    "id": 24,
+    "nombre": "Mother Asus TUF Gaming Z690 PLUS WiFi D4",
+    "precio": 415,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690163163/Rumble%20Store/z690tuf89413_28f38d5fdc1648af82735fbb5ad93206_tq4vd7.jpg",
+    "categoria": "Motherboards"
+  },
+  {
+    "id": 25,
+    "nombre": "Memoria Kingston Fury Renegade 16GB DDR4 3200Mhz",
+    "precio": 65,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690163658/Rumble%20Store/4090_1_c422166c560649fb988a819a39c3bb81_1_mwpbx5.jpg",
+    "categoria": "Memorias Ram"
+  },
+  {
+    "id": 26,
+    "nombre": "Cooler Master MF120 Halo White ARGB",
+    "precio": 20,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690163455/Rumble%20Store/LD0005786913_197060_e53a38c403b843509a65ac43072bb001_fj5lky.jpg",
+    "categoria": "Refrigeracion"
+  },
+  {
+    "id": 27,
+    "nombre": "Cooler Deepcool Gammaxx 400 V2 Red",
+    "precio": 35,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690163728/Rumble%20Store/773_3_13be28fd44df4f04ade5245b001105e2_e2ik4u.jpg",
+    "categoria": "Refrigeracion"
+  },
+  {
+    "id": 28,
+    "nombre": "GPU Gigabyte AORUS GeForce RX6900XT MASTER 16Gb DDR6",
+    "precio": 999,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690163875/Rumble%20Store/6900xtof96255_6c2083b256234ebdaea9c73a0296fe4b_am1ilm.jpg",
+    "categoria": "Tarjetas de Video"
+  },
+  {
+    "id": 29,
+    "nombre": "GPU Biostar Geforce GTX1660 Ti 6Gb",
+    "precio": 349,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690163897/Rumble%20Store/1660tibi39399_7af7c5a2b19943b99389c4d24f269f15_mfygvm.jpg",
+    "categoria": "Tarjetas de Video"
+  },
+  {
+    "id": 30,
+    "nombre": "Seagate Barracuda 1tb sata III",
+    "precio": 55,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690164322/Rumble%20Store/disco-duro-videograbadores-_1__1_wzrtdn.jpg",
+    "categoria": "Almacenamiento"
+  },
+  {
+    "id": 31,
+    "nombre": "KINGSTON A400 DISCO SSD 240Gb",
+    "precio": 24,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690164144/Rumble%20Store/1867_2_c40cbda8e9204d1e822c0f8fdfa31455_x4xmkm.png",
+    "categoria": "Almacenamiento"
+  },
+  {
+    "id": 32,
+    "nombre": "AORUS SSD PCIe Gen4 5000e 500GB",
+    "precio": 69,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690164201/Rumble%20Store/AORUS2520GEN425205000E23166_d40510556356431da2442c0502ee020e_oc8o3p.jpg",
+    "categoria": "Almacenamiento"
+  },
+  {
+    "id": 10,
+    "nombre": "Fuente ASUS ROG STRIX 850G White 80 Plus Gold",
+    "precio": 250,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690164600/Rumble%20Store/5086_1_5585fe4cc673449aacee9673a080fdeb_gopgdz.jpg",
+    "categoria": "Fuentes"
+  },
+  {
+    "id": 10,
+    "nombre": "Gigabyte GP-P650B 80 Plus Bronze",
+    "precio": 85,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690164574/Rumble%20Store/2000_1_2dc38eebd85e471e9767fac7c340837d_1_rv8enj.jpg",
+    "categoria": "Fuentes"
+  },
+  {
+    "id": 10,
+    "nombre": "Fuente Antec CSK 550w 80 plus Bronze",
+    "precio": 60,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690164539/Rumble%20Store/4622_1_5a9b96cefb6842a080f256fe8fc19a47_fhiy5y.jpg",
+    "categoria": "Fuentes"
+  },
+  {
+    "id": 10,
+    "nombre": "Gabinete Cougar MG120-g gabinete mATX",
+    "precio": 60,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690164802/Rumble%20Store/2778_1_dd02792d76c1471d930bd1b180aa3102_rvuwrw.png",
+    "categoria": "Gabinetes"
+  },
+  {
+    "id": 10,
+    "nombre": "Gabinete X-LION KX-580 - Cristal templado - RGB e",
+    "precio": 70,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690164821/Rumble%20Store/xlio_pomecb.jpg",
+    "categoria": "Gabinetes"
+  },
+  {
+    "id": 10,
+    "nombre": "Gabinete DeepCool Macube 310 White - Cristal Templado",
+    "precio": 75,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690164842/Rumble%20Store/dc31065731_5dd5dbf5adfe48e5a6b7c95a7bd5ecfb_zxka8o.jpg",
+    "categoria": "Gabinetes"
+  },
+  {
+    "id": 10,
+    "nombre": "Gabinete Cooler Master MasterBox 520 Mesh Sakura",
+    "precio": 150,
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690164867/Rumble%20Store/mb520s30704_a8423df3695d4a7e9321b9492b1eafe8_h9nh2c.jpg",
+    "categoria": "Gabinetes"
+  }
+]

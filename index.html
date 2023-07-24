@@ -27,6 +27,10 @@
     />
     <!-- LINK CSS -->
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/sweetalert2/dist/sweetalert2.min.css"
+    />
     <title>Inicio - Rumble Store</title>
     <!-- FUENTES TEXTO -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -172,25 +176,57 @@
             <!-- SECCION CATEGORIAS -->
             <section class="categorias col-lg-2">
               <h2>Categorías</h2>
+              <input
+                id="buscador"
+                type="text"
+                placeholder="Buscar un producto.."
+              />
               <ul>
-                <li><a href="#">Equipos armados</a></li>
-                <li><a href="#">Laptops</a></li>
-                <li><a href="#">Consolas</a></li>
-                <li><a href="#">Perifericos</a></li>
-                <li><a href="#">Monitores</a></li>
-                <li><a href="#">Procesadores</a></li>
-                <li><a href="#">Motherboards</a></li>
-                <li><a href="#">Memorias Ram</a></li>
-                <li><a href="#">Refrigeracion</a></li>
-                <li><a href="#">Tarjetas de Video</a></li>
-                <li><a href="#">Almacenamiento</a></li>
-                <li><a href="#">Fuentes</a></li>
-                <li><a href="#">Gabinetes</a></li>
+                <li class="btnCategorias" data-cat="Equipos Armados">
+                  <a href="#">Equipos armados</a>
+                </li>
+                <li class="btnCategorias" data-cat="Notebooks">
+                  <a href="#">Notebooks</a>
+                </li>
+                <li class="btnCategorias" data-cat="Consolas">
+                  <a href="#">Consolas</a>
+                </li>
+                <li class="btnCategorias" data-cat="Perifericos">
+                  <a href="#">Perifericos</a>
+                </li>
+                <li class="btnCategorias" data-cat="Monitores">
+                  <a href="#">Monitores</a>
+                </li>
+                <li class="btnCategorias" data-cat="Procesadores">
+                  <a href="#">Procesadores</a>
+                </li>
+                <li class="btnCategorias" data-cat="Motherboards">
+                  <a href="#">Motherboards</a>
+                </li>
+                <li class="btnCategorias" data-cat="Memorias Ram">
+                  <a href="#">Memorias Ram</a>
+                </li>
+                <li class="btnCategorias" data-cat="Refrigeracion">
+                  <a href="#">Refrigeracion</a>
+                </li>
+                <li class="btnCategorias" data-cat="Tarjetas de Video">
+                  <a href="#">Tarjetas de Video</a>
+                </li>
+                <li class="btnCategorias" data-cat="Almacenamiento">
+                  <a href="#">Almacenamiento</a>
+                </li>
+                <li class="btnCategorias" data-cat="Fuentes">
+                  <a href="#">Fuentes</a>
+                </li>
+                <li class="btnCategorias" data-cat="Gabinetes">
+                  <a href="#">Gabinetes</a>
+                </li>
               </ul>
             </section>
             <!-- SECCION NOVEDADES -->
-            <section id="novedades" class="novedades col-lg-10">
-              <h1>Novedades</h1>
+            <section class="novedades col-lg-10">
+              <h1 id="titleindex">Novedades</h1>
+              <div id="novedades"></div>
             </section>
           </div>
         </div>
@@ -258,5 +294,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/index.js"></script>
+    <script src="./node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
   </body>
 </html>

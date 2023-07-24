@@ -621,6 +621,10 @@ footer .footer .redes a:hover {
   color: orange;
 }
 
+.swal2-icon-content {
+  overflow: visible !important;
+}
+
 @media (max-width: 576px) {
   footer {
     height: auto;
@@ -653,6 +657,5 @@ footer .footer .redes a:hover {
     width: 80px;
   }
 }
-
 
 /*# sourceMappingURL=main.css.map */
