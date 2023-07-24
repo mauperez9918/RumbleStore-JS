@@ -217,8 +217,12 @@ h4 {
   width: 82%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
   padding: 0px;
+}
+.novedades .articulos-novedades {
+  display: flex;
+  flex-wrap: wrap;
 }
 .novedades .tarjeta {
   color: black;
@@ -572,6 +576,15 @@ select:hover {
 
 .swal2-icon {
   overflow-y: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  max-width: 100%;
+  margin-bottom: 20px;
 }
 
 footer {

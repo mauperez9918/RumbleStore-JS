@@ -49,7 +49,12 @@ function agregarProducto(id) {
     }
   });
   if (duplicado) {
-    alert("Tu producto ya esta en el carrito");
+    Swal.fire({
+      position: "top-end",
+      icon: "warning",
+      text: "Tu producto ya esta en el carrito.",
+      showConfirmButton: false,
+    });
   } else {
     const productoCarrito = productos.find((producto) => producto.id === id);
     carritoStorage.push({ ...productoCarrito, cantidad: 1 });
@@ -77,15 +82,18 @@ function filtrarCategorias(categoria) {
   return productos.filter((producto) => producto.categoria == categoria);
 }
 
-const buscador = document.getElementById("buscador");
-buscador.addEventListener("keydown", (event) => {
-  event.preventDefault();
-  productosFiltrados = filtrarPorNombre(buscador.value);
-  listadoDeProductos(productosFiltrados);
-});
-
 function filtrarPorNombre(palabra) {
   return productos.filter((producto) =>
-    producto.nombre.toLowercase().includes(palabra)
+    producto.nombre.toLowerCase().includes(palabra)
   );
 }
+
+const buscador = document.getElementById("buscador");
+buscador.addEventListener("keyup", () => {
+  if (buscador.value != "") {
+    productosFiltrados = filtrarPorNombre(buscador.value.toLowerCase());
+    listadoDeProductos(productosFiltrados);
+  } else {
+    listadoDeProductos(listaDeNovedades);
+  }
+});
