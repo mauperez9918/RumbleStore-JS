@@ -4,13 +4,17 @@ let listaDeNovedades = [];
 let productosFiltrados = [];
 
 async function cargarNovedades() {
-  const response = await fetch(`../novedades.json`);
+  const response = await fetch(
+    `https://mauperez9918.github.io/Proyectofinal-Perez/novedades.json`
+  );
   listaDeNovedades = await response.json();
   listadoDeProductos(listaDeNovedades);
 }
 
 async function cargarProductos() {
-  const response = await fetch(`../productos.json`);
+  const response = await fetch(
+    `https://mauperez9918.github.io/Proyectofinal-Perez/productos.json`
+  );
   productos = await response.json();
 }
 
