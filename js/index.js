@@ -58,6 +58,7 @@ function agregarProducto(id) {
       icon: "warning",
       text: "Tu producto ya esta en el carrito.",
       showConfirmButton: false,
+      timer: 600,
     });
   } else {
     const productoCarrito = productos.find((producto) => producto.id === id);
@@ -68,6 +69,7 @@ function agregarProducto(id) {
       icon: "success",
       text: "Tu producto ha sido agregado al carrito.",
       showConfirmButton: false,
+      timer: 600,
     });
   }
 }
