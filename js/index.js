@@ -60,6 +60,8 @@ function agregarProducto(id) {
       (producto) => producto.id == id
     );
     productoEnCarrito.cantidad = productoEnCarrito.cantidad + 1;
+    localStorage.setItem("carrito", JSON.stringify(carritoStorage));
+    console.log(productoEnCarrito.cantidad);
   } else {
     const productoCarrito = productos.find((producto) => producto.id === id);
     carritoStorage.push({ ...productoCarrito, cantidad: 1 });

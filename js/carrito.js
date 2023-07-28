@@ -12,16 +12,16 @@ function mostrarProductos() {
     <h3>${producto.nombre}</h3>
     <p>US$ ${producto.precio}.00</p>
     <p>Cantidad: ${producto.cantidad}</p>
-    <button class="btnSumarCantidad" data-sumar="${producto.id}"><i class="bi bi-plus-circle-fill"></i></button>
+    <button class="btnRestarCantidad" data-restar="${producto.id}"><i class="bi bi-dash-circle-fill"></i></button>
     <button class="btnQuitar" data-id="${producto.id}"><i class="bi bi-trash-fill"></i></button>
+    <button class="btnSumarCantidad" data-sumar="${producto.id}"><i class="bi bi-plus-circle-fill"></i></button>
     </article>`;
   });
 
-  // Botones de sumar cantidad de el carrito //
+  // Botones de sumar cantidad de un producto de el carrito //
   const btnSumarCantidad = document.getElementsByClassName("btnSumarCantidad");
-  for (boton of btnSumarCantidad) {
+  for (let boton of btnSumarCantidad) {
     boton.addEventListener("click", () => {
-      console.log(boton.dataset.sumar);
       sumarCantidad(boton.dataset.sumar);
     });
   }
@@ -31,6 +31,15 @@ function mostrarProductos() {
   for (boton of botonesQuitar) {
     boton.addEventListener("click", () => {
       quitarProducto(Number(boton.dataset.id));
+    });
+  }
+
+  // Botones de restar cantidad de un producto de el carrito //
+  const btnRestarCantidad =
+    document.getElementsByClassName("btnRestarCantidad");
+  for (boton of btnRestarCantidad) {
+    boton.addEventListener("click", () => {
+      restarCantidad(boton.dataset.restar);
     });
   }
   subtotalPrecio();
@@ -64,11 +73,23 @@ function totalPrecio() {
   totalhtml.innerHTML = `${total}`;
 }
 
-// Function para sumar 1 producto estando en el carrito //
+// Function para sumar 1 producto que esta en el carrito //
 function sumarCantidad(id) {
   let productoEnCarrito = carritoStorage.find((producto) => producto.id == id);
   productoEnCarrito.cantidad = productoEnCarrito.cantidad + 1;
+  localStorage.setItem("carrito", JSON.stringify(carritoStorage));
   mostrarProductos();
 }
 
+// Function para restar 1 producto que esta en el carrito //
+function restarCantidad(id) {
+  let productoEnCarrito = carritoStorage.find((producto) => producto.id == id);
+  if (productoEnCarrito.cantidad > 1) {
+    productoEnCarrito.cantidad = productoEnCarrito.cantidad - 1;
+  } else {
+    quitarProducto(id);
+  }
+  localStorage.setItem("carrito", JSON.stringify(carritoStorage));
+  mostrarProductos();
+}
 mostrarProductos();
