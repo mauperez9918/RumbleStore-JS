@@ -1,5 +1,6 @@
 const carritoStorage = JSON.parse(localStorage.getItem("carrito")) || [];
 
+// Function para mostrar los productos dentro de el carrito //
 function mostrarProductos() {
   const subtotalhtml = document.getElementById("subtotal");
   subtotalhtml.innerText = 0;
@@ -16,6 +17,7 @@ function mostrarProductos() {
     </article>`;
   });
 
+  // Botones de sumar cantidad de el carrito //
   const btnSumarCantidad = document.getElementsByClassName("btnSumarCantidad");
   for (boton of btnSumarCantidad) {
     boton.addEventListener("click", () => {
@@ -24,6 +26,7 @@ function mostrarProductos() {
     });
   }
 
+  // Botones de quitar producto del carrito //
   const botonesQuitar = document.getElementsByClassName("btnQuitar");
   for (boton of botonesQuitar) {
     boton.addEventListener("click", () => {
@@ -34,8 +37,7 @@ function mostrarProductos() {
   totalPrecio();
 }
 
-mostrarProductos();
-
+// Function de quitar producto //
 function quitarProducto(id) {
   let indice = carritoStorage.findIndex((producto) => producto.id === id);
   carritoStorage.splice(indice, 1);
@@ -43,6 +45,7 @@ function quitarProducto(id) {
   mostrarProductos();
 }
 
+// Function para calcular el subtotal del precio //
 function subtotalPrecio() {
   let subtotal = 0;
   carritoStorage.forEach((producto) => {
@@ -52,6 +55,7 @@ function subtotalPrecio() {
   });
 }
 
+// Function para calcular el Total del precio //
 function totalPrecio() {
   const costeDeEnvio = 15;
   let subtotal = Number(document.getElementById("subtotal").innerText);
@@ -60,8 +64,11 @@ function totalPrecio() {
   totalhtml.innerHTML = `${total}`;
 }
 
+// Function para sumar 1 producto estando en el carrito //
 function sumarCantidad(id) {
   let productoEnCarrito = carritoStorage.find((producto) => producto.id == id);
   productoEnCarrito.cantidad = productoEnCarrito.cantidad + 1;
   mostrarProductos();
 }
+
+mostrarProductos();

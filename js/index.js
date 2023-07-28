@@ -74,6 +74,7 @@ function agregarProducto(id) {
   }
 }
 
+// Botones categorias //
 const botonesCategorias = document.querySelectorAll(".btnCategorias");
 botonesCategorias.forEach((boton) => {
   boton.addEventListener("click", (event) => {
@@ -84,16 +85,19 @@ botonesCategorias.forEach((boton) => {
   });
 });
 
+// Function para filtrar las categorias //
 function filtrarCategorias(categoria) {
   return productos.filter((producto) => producto.categoria == categoria);
 }
 
+// Function para filtrar los productos por su nombre //
 function filtrarPorNombre(palabra) {
   return productos.filter((producto) =>
     producto.nombre.toLowerCase().includes(palabra)
   );
 }
 
+// Input que funciona como buscador de productos //
 const buscador = document.getElementById("buscador");
 buscador.addEventListener("keyup", () => {
   if (buscador.value != "") {
