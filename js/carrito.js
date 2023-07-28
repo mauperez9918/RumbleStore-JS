@@ -10,14 +10,23 @@ function mostrarProductos() {
     <img src='${producto.imagen}'>
     <h3>${producto.nombre}</h3>
     <p>US$ ${producto.precio}.00</p>
+    <p>Cantidad: ${producto.cantidad}</p>
+    <button class="btnSumarCantidad" data-sumar="${producto.id}"><i class="bi bi-plus-circle-fill"></i></button>
     <button class="btnQuitar" data-id="${producto.id}"><i class="bi bi-trash-fill"></i></button>
     </article>`;
   });
 
+  const btnSumarCantidad = document.getElementsByClassName("btnSumarCantidad");
+  for (boton of btnSumarCantidad) {
+    boton.addEventListener("click", () => {
+      console.log(boton.dataset.sumar);
+      sumarCantidad(boton.dataset.sumar);
+    });
+  }
+
   const botonesQuitar = document.getElementsByClassName("btnQuitar");
-  for (const boton of botonesQuitar) {
-    boton.addEventListener("click", (event) => {
-      event.preventDefault();
+  for (boton of botonesQuitar) {
+    boton.addEventListener("click", () => {
       quitarProducto(Number(boton.dataset.id));
     });
   }
@@ -49,4 +58,10 @@ function totalPrecio() {
   let total = carritoStorage.length > 0 ? subtotal + costeDeEnvio : 0;
   const totalhtml = document.getElementById("total");
   totalhtml.innerHTML = `${total}`;
+}
+
+function sumarCantidad(id) {
+  let productoEnCarrito = carritoStorage.find((producto) => producto.id == id);
+  productoEnCarrito.cantidad = productoEnCarrito.cantidad + 1;
+  mostrarProductos();
 }

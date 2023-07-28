@@ -3,6 +3,7 @@ let productosPorCategoria = [];
 let listaDeNovedades = [];
 let productosFiltrados = [];
 
+// Carga el JSON de Novedades //
 async function cargarNovedades() {
   const response = await fetch(
     `https://mauperez9918.github.io/Proyectofinal-Perez/novedades.json`
@@ -11,12 +12,15 @@ async function cargarNovedades() {
   listadoDeProductos(listaDeNovedades);
 }
 
+// Carga todos los productos //
 async function cargarProductos() {
   const response = await fetch(
     `https://mauperez9918.github.io/Proyectofinal-Perez/productos.json`
   );
   productos = await response.json();
 }
+
+// Funcion que muestra los productos en el inicio //
 
 function listadoDeProductos(array) {
   let novedades = document.getElementById("novedades");
@@ -32,6 +36,7 @@ function listadoDeProductos(array) {
     </article>`;
   });
 
+  // Boton con evento click que agrega productos al carrito //
   const botonesAgregar = document.getElementsByClassName("btnAgregar");
   for (const boton of botonesAgregar) {
     boton.addEventListener("click", (event) => {
@@ -41,9 +46,7 @@ function listadoDeProductos(array) {
   }
 }
 
-cargarNovedades();
-cargarProductos();
-
+// Funcion de agregar productos al carrito //
 function agregarProducto(id) {
   const carritoStorage = JSON.parse(localStorage.getItem("carrito")) || [];
   let duplicado = false;
@@ -53,13 +56,10 @@ function agregarProducto(id) {
     }
   });
   if (duplicado) {
-    Swal.fire({
-      position: "top-end",
-      icon: "warning",
-      text: "Tu producto ya esta en el carrito.",
-      showConfirmButton: false,
-      timer: 600,
-    });
+    let productoEnCarrito = carritoStorage.find(
+      (producto) => producto.id == id
+    );
+    productoEnCarrito.cantidad = productoEnCarrito.cantidad + 1;
   } else {
     const productoCarrito = productos.find((producto) => producto.id === id);
     carritoStorage.push({ ...productoCarrito, cantidad: 1 });
@@ -100,6 +100,9 @@ buscador.addEventListener("keyup", () => {
     productosFiltrados = filtrarPorNombre(buscador.value.toLowerCase());
     listadoDeProductos(productosFiltrados);
   } else {
-    listadoDeProductos(listaDeNovedades);
+    listadoDeProductos(productosPorCategoria);
   }
 });
+
+cargarNovedades();
+cargarProductos();
