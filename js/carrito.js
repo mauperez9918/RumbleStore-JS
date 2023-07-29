@@ -6,8 +6,12 @@ function mostrarProductos() {
   subtotalhtml.innerText = 0;
   let productosCarrito = document.getElementById("productosCarrito");
   productosCarrito.innerHTML = "";
-  carritoStorage.forEach((producto) => {
-    productosCarrito.innerHTML += `<article class="producto-carrito">
+  if (carritoStorage.length == 0) {
+    console.log(carritoStorage);
+    productosCarrito.innerHTML = `<h5 class="carrito-vacio" >Agrega un producto a tu carrito</h5>`;
+  } else {
+    carritoStorage.forEach((producto) => {
+      productosCarrito.innerHTML += `<article class="producto-carrito">
     <img src='${producto.imagen}'>
     <h3>${producto.nombre}</h3>
     <p>US$ ${producto.precio}.00</p>
@@ -16,7 +20,8 @@ function mostrarProductos() {
     <button class="btnQuitar" data-id="${producto.id}"><i class="bi bi-trash-fill"></i></button>
     <button class="btnSumarCantidad" data-sumar="${producto.id}"><i class="bi bi-plus-circle-fill"></i></button>
     </article>`;
-  });
+    });
+  }
 
   // Botones de sumar cantidad de un producto de el carrito //
   const btnSumarCantidad = document.getElementsByClassName("btnSumarCantidad");
