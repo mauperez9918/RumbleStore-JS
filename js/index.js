@@ -61,13 +61,28 @@ function agregarProducto(id) {
     );
     productoEnCarrito.cantidad = productoEnCarrito.cantidad + 1;
     localStorage.setItem("carrito", JSON.stringify(carritoStorage));
-    console.log(productoEnCarrito.cantidad);
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-right",
+      iconColor: "white",
+      customClass: {
+        popup: "colored-toast",
+      },
+      showConfirmButton: false,
+      timer: 800,
+      timerProgressBar: true,
+      heightAuto: false,
+    });
+    Toast.fire({
+      icon: "success",
+      title: "Producto agregado.",
+    });
   } else {
     const productoCarrito = productos.find((producto) => producto.id === id);
     carritoStorage.push({ ...productoCarrito, cantidad: 1 });
     localStorage.setItem("carrito", JSON.stringify(carritoStorage));
     Swal.fire({
-      position: "top-end",
+      position: "middle",
       icon: "success",
       text: "Tu producto ha sido agregado al carrito.",
       showConfirmButton: false,
@@ -77,13 +92,17 @@ function agregarProducto(id) {
 }
 
 // Botones categorias //
+let categoriaSeleccionada = "Novedades";
 const botonesCategorias = document.querySelectorAll(".btnCategorias");
 botonesCategorias.forEach((boton) => {
   boton.addEventListener("click", (event) => {
     event.preventDefault();
     productosPorCategoria = filtrarCategorias(boton.dataset.cat);
     document.getElementById("titleindex").innerText = boton.dataset.cat;
-    listadoDeProductos(productosPorCategoria);
+    categoriaSeleccionada = boton.dataset.cat;
+    categoriaSeleccionada == "Novedades"
+      ? listadoDeProductos(listaDeNovedades)
+      : listadoDeProductos(productosPorCategoria);
   });
 });
 
@@ -106,7 +125,9 @@ buscador.addEventListener("keyup", () => {
     productosFiltrados = filtrarPorNombre(buscador.value.toLowerCase());
     listadoDeProductos(productosFiltrados);
   } else {
-    listadoDeProductos(productosPorCategoria);
+    categoriaSeleccionada == "Novedades"
+      ? listadoDeProductos(listaDeNovedades)
+      : listadoDeProductos(productosPorCategoria);
   }
 });
 

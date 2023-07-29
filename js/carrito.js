@@ -31,6 +31,22 @@ function mostrarProductos() {
   for (let boton of botonesQuitar) {
     boton.addEventListener("click", () => {
       quitarProducto(Number(boton.dataset.id));
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "top-right",
+        iconColor: "white",
+        customClass: {
+          popup: "colored-toast",
+        },
+        showConfirmButton: false,
+        timer: 800,
+        timerProgressBar: true,
+        heightAuto: false,
+      });
+      Toast.fire({
+        icon: "error",
+        title: "Producto eliminado.",
+      });
     });
   }
 

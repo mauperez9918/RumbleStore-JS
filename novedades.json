@@ -4,69 +4,69 @@
     "nombre": "Mother Asus ROG Maximus Z690 Formula LGA1700",
     "precio": 1290,
     "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/asus-z690_qrblrw.jpg",
-    "categoria": "Motherboards"
+    "categoria": "Novedades"
   },
   {
     "id": 2,
     "nombre": "AMD Ryzen 9 7950X AM5",
     "precio": 1000,
     "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/ryzen9-7950x_ubg1dp.jpg",
-    "categoria": "Procesadores"
+    "categoria": "Novedades"
   },
   {
     "id": 3,
     "nombre": "CPU Intel Core i9 13900K Raptor Lake 1700",
     "precio": 929,
     "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/i9-13900k_l6agxq.jpg",
-    "categoria": "Procesadores"
+    "categoria": "Novedades"
   },
   {
     "id": 4,
     "nombre": "GPU Zotac GeForce RTX 4090 Trinity 24Gb",
     "precio": 2700,
     "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/zotac-geforce-4090_veu7t4.jpg",
-    "categoria": "Tarjetas de Video"
+    "categoria": "Novedades"
   },
   {
     "id": 5,
     "nombre": "AORUS SSD PCIe Gen4 7000s 1TB",
     "precio": 360,
     "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/aorus-ssd-1tb_uga4ko.jpg",
-    "categoria": "Almacenamiento"
+    "categoria": "Novedades"
   },
   {
     "id": 6,
     "nombre": "Memoria Adata XPG Lancer RGB 16Gb DDR5 6000Mhz White",
     "precio": 164,
     "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/adata-xpg-ddr5_bkks7y.jpg",
-    "categoria": "Memorias Ram"
+    "categoria": "Novedades"
   },
   {
     "id": 7,
     "nombre": "Monitor ASUS TUF VG27VH1B Curvo 165hz",
     "precio": 399,
     "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/astuf-monitor_sqhrmp.jpg",
-    "categoria": "Monitores"
+    "categoria": "Novedades"
   },
   {
     "id": 8,
     "nombre": "Notebook AERO i9-13900H / 32GB DDR5 / 1TB / 16″ 4K OLED",
     "precio": 3740,
     "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/aero16-laptop_wrimdh.webp",
-    "categoria": "Notebooks"
+    "categoria": "Novedades"
   },
   {
     "id": 9,
     "nombre": "Teclado HyperX Alloy Origins 60% Aqua Tactile",
     "precio": 110,
     "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/hyperx-alloy-origins_prbp7n.jpg",
-    "categoria": "Perifericos"
+    "categoria": "Novedades"
   },
   {
     "id": 10,
     "nombre": "Fuente ASUS ROG STRIX 850G Gold",
     "precio": 250,
     "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1690160531/Rumble%20Store/fuente-asus-850watts_cfgk0d.png",
-    "categoria": "Fuentes"
+    "categoria": "Novedades"
   }
 ]

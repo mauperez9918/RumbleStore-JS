@@ -168,6 +168,10 @@ h4 {
   margin-bottom: 0px;
 }
 
+.swal2-popup.swal2-toast .swal2-title {
+  height: 25px;
+}
+
 @media mobile {
   h1 {
     height: 73px;
@@ -585,6 +589,26 @@ select,
 textarea {
   max-width: 100%;
   margin-bottom: 20px;
+}
+
+.colored-toast.swal2-icon-success {
+  background-color: #a5dc86 !important;
+}
+
+.colored-toast.swal2-icon-error {
+  background-color: #f27474 !important;
+}
+
+.colored-toast .swal2-title {
+  color: white;
+}
+
+.colored-toast .swal2-close {
+  color: white;
+}
+
+.colored-toast .swal2-html-container {
+  color: white;
 }
 
 footer {
