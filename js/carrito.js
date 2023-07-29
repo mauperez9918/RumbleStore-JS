@@ -28,7 +28,7 @@ function mostrarProductos() {
 
   // Botones de quitar producto del carrito //
   const botonesQuitar = document.getElementsByClassName("btnQuitar");
-  for (boton of botonesQuitar) {
+  for (let boton of botonesQuitar) {
     boton.addEventListener("click", () => {
       quitarProducto(Number(boton.dataset.id));
     });
@@ -37,7 +37,7 @@ function mostrarProductos() {
   // Botones de restar cantidad de un producto de el carrito //
   const btnRestarCantidad =
     document.getElementsByClassName("btnRestarCantidad");
-  for (boton of btnRestarCantidad) {
+  for (let boton of btnRestarCantidad) {
     boton.addEventListener("click", () => {
       restarCantidad(boton.dataset.restar);
     });
@@ -86,8 +86,6 @@ function restarCantidad(id) {
   let productoEnCarrito = carritoStorage.find((producto) => producto.id == id);
   if (productoEnCarrito.cantidad > 1) {
     productoEnCarrito.cantidad = productoEnCarrito.cantidad - 1;
-  } else {
-    quitarProducto(id);
   }
   localStorage.setItem("carrito", JSON.stringify(carritoStorage));
   mostrarProductos();
