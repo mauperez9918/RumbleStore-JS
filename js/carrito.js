@@ -1,4 +1,4 @@
-const carritoStorage = JSON.parse(localStorage.getItem("carrito")) || [];
+let carritoStorage = JSON.parse(localStorage.getItem("carrito")) || [];
 
 // Function para mostrar los productos dentro de el carrito //
 function mostrarProductos() {
@@ -65,6 +65,23 @@ function mostrarProductos() {
   }
   subtotalPrecio();
   totalPrecio();
+}
+
+// Boton de Realizar Compra //
+const btnRealizar = document.getElementsByClassName("btnRealizarCompra");
+for (let boton of btnRealizar) {
+  boton.addEventListener("click", () => {
+    carritoStorage = [];
+    mostrarProductos();
+    localStorage.setItem("carrito", JSON.stringify(carritoStorage));
+    Swal.fire({
+      position: "middle",
+      icon: "success",
+      text: "Tu compra ha sido realizada",
+      showConfirmButton: false,
+      timer: 900,
+    });
+  });
 }
 
 // Function de quitar producto //
