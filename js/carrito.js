@@ -79,7 +79,7 @@ function quitarProducto(id) {
 function subtotalPrecio() {
   let subtotal = 0;
   carritoStorage.forEach((producto) => {
-    subtotal = subtotal + producto.precio;
+    subtotal = subtotal + producto.precio * producto.cantidad;
     const subtotalhtml = document.getElementById("subtotal");
     subtotalhtml.innerText = `${subtotal}`;
   });

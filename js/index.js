@@ -75,7 +75,7 @@ function agregarProducto(id) {
     });
     Toast.fire({
       icon: "success",
-      title: "Producto agregado.",
+      title: `Agregado al carrito: ${productoEnCarrito.cantidad} .`,
     });
   } else {
     const productoCarrito = productos.find((producto) => producto.id === id);
