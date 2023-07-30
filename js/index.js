@@ -97,6 +97,7 @@ const botonesCategorias = document.querySelectorAll(".btnCategorias");
 botonesCategorias.forEach((boton) => {
   boton.addEventListener("click", (event) => {
     event.preventDefault();
+    buscador.value = "";
     productosPorCategoria = filtrarCategorias(boton.dataset.cat);
     document.getElementById("titleindex").innerText = boton.dataset.cat;
     categoriaSeleccionada = boton.dataset.cat;
