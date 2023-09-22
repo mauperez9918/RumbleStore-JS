@@ -6,7 +6,7 @@ let productosFiltrados = [];
 // Carga el JSON de Novedades //
 async function cargarNovedades() {
   const response = await fetch(
-    `https://mauperez9918.github.io/Proyectofinal-Perez/novedades.json`
+    `https://mauperez9918.github.io/RumbleStore-JS/novedades.json`
   );
   listaDeNovedades = await response.json();
   listadoDeProductos(listaDeNovedades);
@@ -15,7 +15,7 @@ async function cargarNovedades() {
 // Carga todos los productos //
 async function cargarProductos() {
   const response = await fetch(
-    `https://mauperez9918.github.io/Proyectofinal-Perez/productos.json`
+    `https://mauperez9918.github.io/RumbleStore-JS/productos.json`
   );
   productos = await response.json();
 }
