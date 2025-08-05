@@ -23,7 +23,7 @@ Este proyecto es completamente estático y no requiere instalación de dependenc
 git clone https://github.com/mauperez9918/RumbleStore-JS.git
 
 Abrí el archivo principal: index.html
-```
+
 
 ## 📁 Estructura del Proyecto
 
@@ -64,6 +64,7 @@ RumbleStore-JS/
 ├── package.json
 ├── package-lock.json
 └── README.md # Documentación del proyecto
+```
 
 ## 🛒 Funcionalidades Implementadas
 
