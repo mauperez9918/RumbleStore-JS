@@ -1,12 +1,12 @@
 {
-  "name": "mi-proyecto-grids",
+  "name": "rumble-store",
   "version": "1.0.0",
   "description": "Rumble Store\r Sitio web de venta de hardware",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Mauricio Perez",
   "license": "ISC",
   "dependencies": {
     "sass": "^1.62.0",
