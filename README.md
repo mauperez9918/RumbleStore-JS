@@ -35,12 +35,6 @@ RumbleStore-JS/
 │ ├── main.css
 │ └── main.css.map
 ├── images/ # Imágenes del sitio
-│ ├── cambios-y-garantias/
-│ ├── index/
-│ ├── nosotros/
-│ ├── logo.png
-│ ├── rumble-logo.png
-│ └── shopping-cart.png
 ├── js/ # Lógica del sitio
 │ ├── carrito.js
 │ └── index.js
